@@ -12,6 +12,63 @@ var Mobile = /** @class */ (function () {
         this.cameraNumber = cameraNumber;
         this.price = price;
     }
+    // métodos públicos (getters)
+    Mobile.prototype.getName = function () {
+        return this.name;
+    };
+    Mobile.prototype.getModel = function () {
+        return this.model;
+    };
+    Mobile.prototype.getTrademark = function () {
+        return this.trademark;
+    };
+    Mobile.prototype.getSdSize = function () {
+        return this.sdSize;
+    };
+    Mobile.prototype.getColor = function () {
+        return this.color;
+    };
+    Mobile.prototype.getIs5G = function () {
+        return this.is5G;
+    };
+    Mobile.prototype.getCameraNumber = function () {
+        return this.cameraNumber;
+    };
+    Mobile.prototype.getPrice = function () {
+        return this.price;
+    };
+    // Métodos públicos (setters)
+    Mobile.prototype.setName = function (name) {
+        this.name = name;
+    };
+    Mobile.prototype.setModel = function (model) {
+        this.model = model;
+    };
+    Mobile.prototype.setTrademark = function (trademarkt) {
+        this.trademark = trademarkt;
+    };
+    Mobile.prototype.setSdSize = function (sdSize) {
+        this.sdSize = sdSize;
+    };
+    Mobile.prototype.setColor = function (color) {
+        this.color = color;
+    };
+    Mobile.prototype.setIs5G = function (is5G) {
+        this.is5G = is5G;
+    };
+    Mobile.prototype.setCameraNumber = function (cameraNumber) {
+        this.cameraNumber = cameraNumber;
+    };
+    Mobile.prototype.setPrice = function (price) {
+        this.price = price;
+    };
+    // Otros métodos públicos
+    Mobile.prototype.toString = function () {
+        return "The characteristics of the mobile " + this.name + " are:\n" + "*Name: " + this.name + "\n" +
+            "*Model: " + this.model + "\n" + "*Trademark: " + this.trademark + "\n" + "SD Size(GB): " +
+            this.sdSize + "\n" + "*Color: " + this.color + "\n" + "*Is 5G? :" + this.is5G + "\n" +
+            "*Number of Cameras: " + this.cameraNumber;
+    };
     return Mobile;
 }());
 exports.Mobile = Mobile;
