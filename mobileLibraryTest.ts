@@ -13,4 +13,13 @@ let miLibreria = new MobileLibrary ("Mi libreria", "Estanteria izquierda", myArr
 console.log(miLibreria.getName());
 console.log(miLibreria.getLocation());
 console.log(miLibreria.getMobiles());
-console.log(miLibreria.totalPriceCalculator())
+// console.log(miLibreria.totalPriceCalculator())
+
+// console.log(miLibreria)
+
+let telefono5 = new Mobile ("Alcatel OneTouch", "OneTouch", "Alcatel", 4, "amarillo", false, 0, 39);
+let telefono6 = new Mobile ("Samsung Galaxy A50", "Galaxy A50", "Samsung", 128, "azul", true, 4, 399);
+
+let myarr2 = [telefono5, telefono6];
+let miLibrary2 = new MobileLibrary ("Mi libería", "Estantería derecha", myarr2)
+miLibrary2.printLibrary()
