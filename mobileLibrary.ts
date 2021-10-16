@@ -37,6 +37,6 @@ public totalPriceCalculator(){
     for (let i = 0; i < this.mobiles.length; i++){
         sumaPrecio += this.mobiles[i].getPrice();
     }
-    sumaPrecio = this.totalPrice
+    return sumaPrecio 
 } 
 }

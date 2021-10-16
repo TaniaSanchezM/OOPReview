@@ -13,3 +13,4 @@ let miLibreria = new MobileLibrary ("Mi libreria", "Estanteria izquierda", myArr
 console.log(miLibreria.getName());
 console.log(miLibreria.getLocation());
 console.log(miLibreria.getMobiles());
+console.log(miLibreria.totalPriceCalculator())
